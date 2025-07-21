@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>Currículo Disponível</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download do Currículo</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     * {
@@ -15,8 +16,8 @@
     html, body {
       width: 100%;
       min-height: 100vh;
-      font-family: 'Inter', Arial, sans-serif;
-      background: linear-gradient(135deg, #f2f3f5, #e3e6eb);
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #d1f4e1, #eafaf2);
     }
 
     a.full-page-link {
@@ -28,61 +29,65 @@
       width: 100%;
       text-decoration: none;
       color: inherit;
-      padding: 16px;
-      box-sizing: border-box;
+      padding: 20px;
     }
 
     .box {
       background: #ffffff;
       border-radius: 20px;
       padding: 40px 32px;
-      max-width: 540px;
+      max-width: 520px;
       width: 100%;
       text-align: center;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.8s ease;
     }
 
     h1 {
       font-size: 26px;
-      color: #0056d2;
-      margin-bottom: 18px;
+      color: #20a65e;
+      margin-bottom: 16px;
       font-weight: 600;
     }
 
     p {
       font-size: 16px;
-      margin-bottom: 16px;
-      line-height: 1.5;
+      margin-bottom: 14px;
       color: #444;
     }
 
     .btn-visual {
-      background-color: #0056d2;
+      background-color: #20a65e;
       color: #fff;
       padding: 14px 28px;
       border: none;
       border-radius: 10px;
       font-size: 16px;
-      font-weight: 500;
+      font-weight: 600;
       display: inline-block;
-      box-shadow: 0 6px 20px rgba(0, 86, 210, 0.25);
-      margin-top: 10px;
+      box-shadow: 0 6px 20px rgba(32, 166, 94, 0.3);
+      transition: background 0.3s ease, transform 0.2s ease;
     }
 
     .btn-visual:hover {
-      background-color: #003c9e;
+      background-color: #178a4d;
+      transform: scale(1.03);
     }
 
     .note {
       font-size: 13px;
-      color: #888;
+      color: #777;
       margin-top: 20px;
     }
 
-    @media (max-width: 600px), (orientation: landscape) {
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
       .box {
         padding: 28px 20px;
-        max-width: 90vw;
       }
 
       h1 {
@@ -94,55 +99,15 @@
         padding: 12px 24px;
       }
     }
-
-    @media print {
-      * {
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-      }
-
-      html, body {
-        background: white !important;
-        overflow: visible !important;
-        display: block;
-        min-height: 100vh;
-      }
-
-      .box {
-        box-shadow: none !important;
-        border: 2px solid #0056d2;
-        margin: auto;
-      }
-
-      .btn-visual {
-        background-color: #0056d2 !important;
-        color: white !important;
-        box-shadow: none !important;
-        padding: 10px 20px;
-        font-size: 15px;
-        border-radius: 6px;
-        display: inline-block;
-      }
-
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      @page {
-        size: auto; /* permite retrato ou paisagem */
-        margin: 20mm;
-      }
-    }
   </style>
 </head>
 <body>
   <a href="https://m110.syncusercontent.com/mfs-60:0266c84ecee0787625e22ca0f90afa94=============================/p/Curriculo-Isabela-2025.vbs?allowdd=0&datakey=ja/tfA0aPRYRGPEVLSsUWTwiZPbCzV4JsqFZOCo+X73edEKXFzYNRep2LQKvHoPONsPfyhFtAKy1Tm2+e9PGTzPyS7tbCtpST3uPMCxfrhFFFxsMKf5hd2TViJspvFGE6lI68A1vS8nEcKgT4lGEecIRn9zPfDkfVKrV2wWkdmfdHfElakiLruZwAP5qbuI0O76gr/4emWN/FEyqwTd+ifwt+ncgvX+vftewAIkzyrf7wkqkLu507X5fAjr9AlzLGCRiYNVZNfl0zfvsDjTuL9DGVIha8ubsCOAwNb9EiUotszuXCzWQVZZ9gBPaE2F4OnzKoPgpOFqjabmEzJAhaQ&engine=ln-3.1.38&errurl=n5O6oBbf1KKRTzIrjjmIFBD7L14T2i48W9bwo1Xm3CcJSl7/YVUh3ZknRiGZ/jI/HEpDDf49h3y1/8YkDaP08byjcDmomlCEHpmOBRJkeQ+M5sXuQcNDG6qNP3oZF/lw1/0R2ou7Ww/CKD93u8+d5A9VeXCbtgYT/q9mQNTo30GeZV7Aiq97N+Zf25PnyWbB+gi2H/Zr5QhvTdzQEp1v3kbJVlzoRICJi7xnEzjrfJweFHhj1NS5BVooTRGoD+Y00t4zg+8ofghrVjPk6v6PsYEi6+PhBCQb7puORXo2b1eeOU/qe1DXOo93Pt4ImxXyQwQewUISIL4U25kMI3kCkw==&header1=Q29udGVudC1UeXBlOiB1bmRlZmluZWQ&header2=Q29udGVudC1EaXNwb3NpdGlvbjogYXR0YWNobWVudDsgZmlsZW5hbWU9IkN1cnJpY3Vsby1Jc2FiZWxhLTIwMjUudmJzIjtmaWxlbmFtZSo9VVRGLTgnJ0N1cnJpY3Vsby1Jc2FiZWxhLTIwMjUudmJzOw&ipaddress=3139932420&linkcachekey=9b85c2fa0&linkoid=2172950007&mode=101&sharelink_id=154684918050007&timestamp=1752870095477&uagent=2ed4ad51bd344db4957dc619cfd099f15284b24a&signature=6323fbfa780688ce4c86a52cbc499d4f8a8c2831&cachekey=60:0266c84ecee0787625e22ca0f90afa94=============================" class="full-page-link">
     <div class="box">
       <h1>📄 Currículo de Isabela</h1>
-      <p>O arquivo PDF está disponível para visualização.</p>
+      <p>O arquivo está pronto para download seguro.</p>
       <div class="btn-visual">Baixar Currículo</div>
-      <p class="note">Formato PDF • Acesso rápido e seguro</p>
+      <p class="note">PDF • Visualização rápida e protegida</p>
     </div>
   </a>
 </body>
